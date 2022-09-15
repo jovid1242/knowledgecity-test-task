@@ -1,0 +1,29 @@
+.form-wrapper {
+    width: 400px;
+
+    .logo {
+        width: inherit;
+        height: 100px;
+        margin-bottom: 32px;
+    }
+
+    .form-header {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+
+    .form-input {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .form-btn {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

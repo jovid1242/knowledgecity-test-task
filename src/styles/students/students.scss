@@ -1,0 +1,22 @@
+.students-list {
+    width: 100%;
+    min-height: 100vh;
+
+    &__wrapper {
+        padding: 40px 80px;
+
+        .head {
+            width: inherit;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-head {
+            margin-top: 8px;
+            width: 100%;
+            height: 20px;
+            background: #e68134;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+@import "~antd/dist/antd.css";
+
+body {
+    background: #f5f5f5;
+}
+
+.h100 {
+    height: calc(100vh);
+}
+
+.mh100 {
+    min-height: calc(100vh);
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+/* ui */
+.btn {
+    border-color: #e68134 !important;
+    color: #e68134 !important;
+    background-color: #e68134 !important;
+    color: #fff !important;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover {
+    border-color: #e68134 !important;
+    color: #e68134 !important;
+}
+
+.ant-input:focus,
+.ant-input-focused,
+.ant-input-affix-wrapper-focused {
+    border-color: #e68134 !important;
+    box-shadow: 0 0 0 2px #e681342e !important;
+}
+
+.ant-input:hover {
+    border-color: #e68134 !important;
+}
+
+.ant-table-tbody tr:nth-child(even) {
+    background-color: #e8e8e8 !important;
+}
+
+.ant-pagination-prev,
+.ant-pagination-next {
+    border: none !important;
+    min-width: 10px !important;
+}
+
+.ant-pagination-prev button {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.ant-pagination-next button {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.ant-pagination-prev {
+    margin-right: 4px !important;
+}
+
+.ant-pagination .ant-pagination-item {
+    min-width: 10px !important;
+    margin-right: 2px !important;
+    border: none !important;
+    background-color: transparent !important;
+    color: #000 !important;
+}
+
+.ant-pagination-item-active {
+    position: relative !important;
+}
+
+.ant-pagination-item-active::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    left: 4px;
+    bottom: 7px;
+    background-color: #e68134;
+}
+
+.mb2 {
+    margin-bottom: 8px !important;
+}
+
+.mb4 {
+    margin-bottom: 16px !important;
+}
+
+.text-yellow {
+    color: #e68134 !important;
+}
+
+.w100 {
+    width: 100% !important;
+}
+
+/* and ui */
+
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+h2 {
+    margin: 0 !important;
+}
+
+a {
+    color: #000 !important;
+}
