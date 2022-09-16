@@ -125,13 +125,13 @@ app.get("/students", (req, res) => {
 
 app.get("/students/:student_id", (req, res) => {
     let { student_id } = req.params
-    const result = students.filter((student) => student.id === student_id)
-    res.json(result)
+    const result = students.filter((student) => student.id == student_id)
+    res.status(200).json(result)
 })
 
 app.delete("/students/:student_id", (req, res) => {
     let { student_id } = req.params
-    students = students.filter((student) => student.id !== student_id)
+    students = students.filter((student) => student.id != student_id)
     res.status(200).json({ ok: student_id })
 })
 
@@ -158,7 +158,7 @@ app.put("/students/:student_id", (req, res) => {
         last_name,
         email,
     }
-    let index = students.findIndex((el) => el.id === student_id)
+    let index = students.findIndex((el) => el.id == student_id)
     if (index > 0) {
         if (students[index]) students[index] = student
     }

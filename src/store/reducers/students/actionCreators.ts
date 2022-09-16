@@ -83,7 +83,7 @@ export const StudentActionCreators = {
             )
         }
     },
-    getStudent: () => async (dispatch: AppDispatch) => {
+    getStudents: () => async (dispatch: AppDispatch) => {
         try {
             dispatch(StudentActionCreators.setTableIsLoading(true))
             axios
@@ -94,6 +94,24 @@ export const StudentActionCreators = {
                 .finally(() => {
                     dispatch(StudentActionCreators.setTableIsLoading(false))
                 })
-        } catch {}
+        } catch {
+            dispatch(
+                StudentActionCreators.setIsError(
+                    "Произошла ошибка при изменение"
+                )
+            )
+        }
     },
+    getStudent:
+        (student_id: string | number) => async (dispatch: AppDispatch) => {
+            try {
+                return axios.get(`${API_SERVER}/students/${student_id}`)
+            } catch {
+                dispatch(
+                    StudentActionCreators.setIsError(
+                        "Произошла ошибка при изменение"
+                    )
+                )
+            }
+        },
 }

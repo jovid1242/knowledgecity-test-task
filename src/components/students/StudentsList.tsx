@@ -13,6 +13,7 @@ import { IStudents } from "models/students"
 // hooks
 import { useTypedSelector } from "hooks/useTypedSelector"
 import EditStudent from "components/modal/EditStudent"
+import Popap from "components/popover"
 
 const columns: ColumnsType<IStudents> = [
     {
@@ -23,7 +24,11 @@ const columns: ColumnsType<IStudents> = [
     {
         title: "E-mail",
         dataIndex: "email",
-        render: (text) => <Typography.Text underline>{text}</Typography.Text>,
+        render: (text, row) => (
+            <Popap student={row} key={row.id}>
+                <Typography.Text underline>{text}</Typography.Text>
+            </Popap>
+        ),
     },
     {
         title: "Action",
@@ -51,6 +56,7 @@ const StudentsList: FC = () => {
         <div>
             <Table
                 showHeader={false}
+                rowKey="id"
                 loading={tableIsLoading}
                 columns={columns}
                 dataSource={students}

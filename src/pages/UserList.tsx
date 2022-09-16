@@ -16,10 +16,10 @@ import AddStudent from "components/modal/AddStudent"
 const { Title } = Typography
 
 const UserList: FC = () => {
-    const { getStudent } = useAppDispatch()
+    const { getStudents } = useAppDispatch()
 
     useMemo(() => {
-        getStudent()
+        getStudents()
     }, [])
 
     return (
