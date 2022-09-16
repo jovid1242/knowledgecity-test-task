@@ -1,4 +1,4 @@
-# Test tasks ( Authorization )
+# Test tasks 
 
 ## Tech
 
@@ -16,8 +16,8 @@ Project uses a number of open source projects to work properly:
 # Login details:
 
 ```sh
-"username": "jovid",
-"password": "123456",
+"username": "dementor@egggis.ru",
+"password": "testpassword1",
 ```
 
 # How to:
@@ -41,13 +41,15 @@ npm install
 For _yarn_:
 
 ```sh
-yarn start
+front  - yarn start
+server - cd server/ node server.js
 ```
 
 For _npm_:
 
 ```sh
-npm run start
+front  - npm run start
+server - cd server/ node server.js
 ```
 
 
