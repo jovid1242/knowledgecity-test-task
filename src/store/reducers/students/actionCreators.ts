@@ -9,7 +9,6 @@ import {
     DeleteStudent,
     EditStudent,
     SetIsError,
-    SetSearch,
     SetStudents,
     SetTableIsLoading,
 } from "./types"
@@ -44,7 +43,7 @@ export const StudentActionCreators = {
     }),
     addStudentAsync: (student: IStudents) => async (dispatch: AppDispatch) => {
         try {
-            axios.post(`${API_SERVER}/students/`).then(() => {
+            axios.post(`${API_SERVER}/students`).then(() => {
                 dispatch(StudentActionCreators.setStudent(student))
             })
         } catch (e) {

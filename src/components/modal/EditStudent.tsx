@@ -77,7 +77,7 @@ const EditStudent: FC<IStudents> = ({
                 <EditOutlined />
             </Button>
             <Modal
-                visible={open}
+                open={open}
                 confirmLoading={confirmLoading}
                 onCancel={handleCancel}
                 footer={false}

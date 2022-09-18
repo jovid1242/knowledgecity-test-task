@@ -30,8 +30,8 @@ const Popap: FC<PopapProps> = ({ children, student }) => {
                 placement="right"
                 title="Student info"
                 trigger="click"
-                visible={open}
-                onVisibleChange={handleOpenChange}
+                open={open}
+                onOpenChange={handleOpenChange}
             >
                 <Button type="link" size="small">
                     {children}

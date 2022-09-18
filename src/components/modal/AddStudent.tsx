@@ -57,7 +57,7 @@ const AddStudent: FC = () => {
                 Add New student
             </Button>
             <Modal
-                visible={open}
+                open={open}
                 confirmLoading={confirmLoading}
                 onCancel={handleCancel}
                 footer={false}

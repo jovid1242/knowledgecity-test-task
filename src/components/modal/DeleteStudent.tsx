@@ -40,7 +40,7 @@ const DeleteStudent: FC<DeleteStudentProps> = ({ id }) => {
                 <DeleteOutlined />
             </Button>
             <Modal
-                visible={open}
+                open={open}
                 confirmLoading={confirmLoading}
                 onCancel={handleCancel}
                 footer={false}
