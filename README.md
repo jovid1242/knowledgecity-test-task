@@ -41,13 +41,13 @@ npm install
 For _yarn_:
 
 ```sh
-yarn dev
+yarn setup
 ```
 
 For _npm_:
 
 ```sh
-npm run dev
+npm run setup
 ```
 
 
