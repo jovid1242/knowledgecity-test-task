@@ -41,15 +41,13 @@ npm install
 For _yarn_:
 
 ```sh
-front  - yarn start
-server - cd server/ node server.js
+yarn dev
 ```
 
 For _npm_:
 
 ```sh
-front  - npm run start
-server - cd server/ node server.js
+npm run dev
 ```
 
 
